@@ -69,6 +69,3 @@ function onDeviceReady() {
 		var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
 		db.transaction(populateDB, errorCB, successCB);
 }
-
-		var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-		db.transaction(populateDB, errorCB, successCB);
