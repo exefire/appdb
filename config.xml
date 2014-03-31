@@ -13,7 +13,7 @@
   <preference name="target-device" value="handset" />
   
   <!-- if a single icon is specified then Build will use it for all platforms -->
-  <icon src="icons/icon.png" />
+  <icon src="icon.png" />
   
   <!-- Android requires specific dimensions; ldpi, mdpi, and hdpi respectively -->
   <icon src="icons/android/icon-android-36.png" gap:platform="android" gap:density="ldpi" />
