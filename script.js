@@ -74,5 +74,14 @@
         var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
         db.transaction(populateDB, errorCB, successCB);
     }
-        var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-        db.transaction(populateDB, errorCB, successCB);
+		
+function UrlExists(url){
+	var http = new XMLHttpRequest();
+	http.open('HEAD', url, false);
+	http.send();
+	return http.status!=404;
+}
+if(!UrlExists('cordova.js')){
+	var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+	db.transaction(populateDB, errorCB, successCB);
+}
